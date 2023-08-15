@@ -7,7 +7,7 @@ class Conectar {
     protected function Conexion() {
         try {
 
-            $conectar = $this->dbh = new PDO( 'mysql:local=localhost;dbname=php-api', 'root', 'chiny123' );
+            $conectar = $this->dbh = new PDO( 'mysql:local=localhost;dbname=php-api', 'root', '' );
             return $conectar;
 
         } catch( Exception $e ) {
